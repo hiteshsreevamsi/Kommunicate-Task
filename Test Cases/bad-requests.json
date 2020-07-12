@@ -1,0 +1,69 @@
+{
+  "movies": [
+    {
+      "movie_name": "  ",
+      "start_date": "16 jan",
+      "end_date": "21 Jan"
+    },
+    {
+      "movie_name": "Baahubali 2",
+      "start_date": "abcd",
+      "end_date": "21 Feb"
+    },
+    {
+      "movie_name": "Avengers",
+      "start_date": "01 Jan",
+      "end_date": "efgh"
+    },
+    {
+      "movie_name": "Avengers 2",
+      "start_date": "01 Jan",
+      "end_date": "02 Jan"
+    },
+    {
+      "movie_name": "",
+      "start_date": "2/3 Jan",
+      "end_date": "04 Jan"
+    },
+    {
+      "movie_name": "Batman Dark knight",
+      "start_date": "02 Mar",
+      "end_date": "01 Mar"
+    },
+    {
+      "movie_name": "Dark",
+      "start_date": "02 Apr",
+      "end_date": "04 Apr"
+    },
+    {
+      "movie_name": "Friends",
+      "start_date": "22 Jan",
+      "end_date": "24 Jan"
+    },
+    {
+      "movie_name": "Game of Thrones",
+      "start_date": "22 Jan",
+      "end_date": "24 Jan"
+    },
+    {
+      "movie_name": "Peaky blinders",
+      "start_date": "",
+      "end_date": "10 Feb"
+    },
+    {
+      "movie_name": "  ",
+      "start_date": "11 Feb",
+      "end_date": "  "
+    },
+    {},
+    {
+      "movie_name": "Game of Thrones",
+      "start_date": "31 Dec",
+      "end_date": "1 Jan"
+    },
+    {
+      "start_date": "31 Dec",
+      "end_date": "1 Jan"
+    }
+  ]
+}

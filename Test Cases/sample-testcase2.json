@@ -1,0 +1,99 @@
+{
+  "movies": [
+    {
+      "movie_name": "Baahubali",
+      "start_date": "20 Jan",
+      "end_date": "21 Jan"
+    },
+    {
+      "movie_name": "Baahubali 2",
+      "start_date": "3 Feb",
+      "end_date": "8 Feb"
+    },
+    {
+      "movie_name": "Avengers",
+      "start_date": "01 Jan",
+      "end_date": "03 Jan"
+    },
+    {
+      "movie_name": "Avengers 2",
+      "start_date": "01 Jan",
+      "end_date": "02 Jan"
+    },
+    {
+      "movie_name": " Avengers 3",
+      "start_date": "02 Jan",
+      "end_date": "04 Jan"
+    },
+    {
+      "movie_name": "Batman Dark knight",
+      "start_date": "02 Mar",
+      "end_date": "04 Mar"
+    },
+    {
+      "movie_name": "Dark",
+      "start_date": "02 Apr",
+      "end_date": "04 Apr"
+    },
+    {
+      "movie_name": "Friends",
+      "start_date": "22 Jan",
+      "end_date": "24 Jan"
+    },
+    {
+      "movie_name": "Game of Thrones",
+      "start_date": "22 Jan",
+      "end_date": "24 Jan"
+    },
+    {
+      "movie_name": "Peaky blinders",
+      "start_date": "9 Feb",
+      "end_date": "10 Feb"
+    },
+    {
+      "movie_name": "Stranger Things",
+      "start_date": "11 Feb",
+      "end_date": "11 Feb"
+    },
+    {
+      "movie_name": "Peaky blinders",
+      "start_date": "12 Feb",
+      "end_date": "28 Feb"
+    },
+    {
+      "movie_name": "Tenet",
+      "start_date": "1 Feb",
+      "end_date": "28 Feb"
+    },
+    {
+      "movie_name": "Lucifer",
+      "start_date": "4 Jan",
+      "end_date": "6 Jan"
+    },
+    {
+      "movie_name": "The society",
+      "start_date": "7 Jan",
+      "end_date": "10 Jan"
+    },
+    {
+      "movie_name": "Elite",
+      "start_date": "8 Jan",
+      "end_date": "10 Jan"
+    },
+    {
+      "movie_name": "flash",
+      "start_date": "1 Dec",
+      "end_date": "30 Dec"
+    },
+    {
+      "movie_name": "Happy New Year",
+      "start_date": "31 Dec",
+      "end_date": "31 Dec"
+    },
+    {
+      "movie_name": "saaho",
+      "start_date": "15 Aug",
+      "end_date": "31 Aug"
+    }
+  ]
+}
