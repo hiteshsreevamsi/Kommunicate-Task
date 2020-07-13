@@ -6,26 +6,7 @@ from flask import jsonify
 app = flask.Flask(__name__)
 
 
-def profit(data):
-    res = {'movies': [], 'profit': 0}
-    count = 0
-    previous_date = 0
-    for movies in data:
-
-        if count == 0:
-            res['movies'].append(movies)
-            previous_date = datetime.strptime(movies['end_date'], '%d %b')
-            count += 1
-            continue
-        current_date = datetime.strptime(movies['start_date'], '%d %b')
-        if current_date > previous_date:
-            res['movies'].append(movies)
-            previous_date = datetime.strptime(movies['end_date'], '%d %b')
-            count += 1
-    res['profit'] = str(count) + " Crores"
-    return res
-
-
+# Check for Errors in the request data
 def errors(data):
     err = {"references": []}
     for da in data['movies']:
@@ -61,19 +42,50 @@ def errors(data):
     return err
 
 
+# Function for calculating the max profit
+def profit(data):
+    res = {'movies': [], 'profit': 0}
+    count = 0
+    previous_date = 0
+    for movies in data:
+
+        # Adding the First movie in the sorted list directly
+        if count == 0:
+            res['movies'].append(movies)
+            previous_date = datetime.strptime(movies['end_date'], '%d %b')
+            count += 1
+            continue
+
+        current_date = datetime.strptime(movies['start_date'], '%d %b')
+
+        # Selecting the movies which has start date greater than the end Date of previous movie
+        if current_date > previous_date:
+            res['movies'].append(movies)
+            previous_date = datetime.strptime(movies['end_date'], '%d %b')
+            count += 1
+    res['profit'] = str(count) + " Crores"
+    return res
+
+
 @app.route("/", methods=["POST"])
 def max_profit():
     if flask.request.method == "POST":
         if connexion.request.is_json:
             body = connexion.request.get_json()
+        # Check for Empty body
         if len(body) == 0:
             return jsonify('empty request'), 400
+
+        # Check for empty movie list
         if len(body['movies']) == 0:
             return jsonify({"error": "There are no movies in the list"}), 400
         error_list = errors(body)
+
+        # If any error occur returning the error list as response
         if len(error_list['references']) > 0:
             return jsonify(error_list), 400
 
+        # Sorting the data with respect to end date
         sorted_date = sorted(body['movies'], key=lambda x: datetime.strptime(x['end_date'], '%d %b'))
         answer = profit(sorted_date)
     return jsonify(answer), 200
